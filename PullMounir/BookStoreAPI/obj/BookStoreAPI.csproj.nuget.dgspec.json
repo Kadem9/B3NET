@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj": {}
+    "c:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj": {
+    "c:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj",
+        "projectUniqueName": "c:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj",
         "projectName": "BookStoreAPI",
-        "projectPath": "C:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj",
+        "projectPath": "c:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\BookStoreAPI.csproj",
         "packagesPath": "C:\\Users\\Kadem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\obj\\",
+        "outputPath": "c:\\Users\\Kadem\\Desktop\\Isitech\\ECOLE\\B3\\.NET\\PullMounir\\BookStoreAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kadem\\AppData\\Roaming\\NuGet\\NuGet.Config",

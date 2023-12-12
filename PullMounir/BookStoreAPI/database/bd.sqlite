@@ -1,0 +1,30 @@
+-- Créer une base avec une table
+CREATE TABLE FOOTBALLEUR (
+    id INTEGER PRIMARY KEY,
+    firstname TEXT NOT NULL,
+    lastname TEXT NOT NULL,
+    club TEXT NOT NULL,
+    nationality TEXT NOT NULL
+);
+ 
+-- Insérer des données dans la table
+INSERT INTO FOOTBALLEUR (firstname ,lastname ,club,nationality)
+VALUES('Kylian', 'Mbappe', 'Paris Saint-Germain','French');
+ 
+ 
+-- Sélectionner toutes les données de la table
+SELECT * FROM FOOTBALLEUR;
+ 
+-- Mise à jour d'une donnée
+UPDATE FOOTBALLEUR SET club = 'Real Madrid' WHERE id = 1;
+ 
+-- Supprimer une ligne
+-- DELETE FROM FOOTBALLEUR WHERE id = 1;
+
+-- SQLite est un système de base de données qui a la particularité de fonctionner sans serveur, on dit aussi "standalone" ou "base de données embarquée". On peut l'utiliser avec beaucoup de langages : PHP, Python, C# (.NET), Java, C/C++, Delphi, Ruby...
+
+--L'intérêt c'est que c'est très léger et rapide à mettre en place, on peut s'en servir aussi bien pour stocker des données dans une vraie base de données sur une application pour smartphone (iPhone ou Android), pour une application Windows, ou sur un serveur web.
+
+--Une base de données SQLite est bien plus performante et facile à utiliser que de stocker les données dans des fichiers XML ou binaires, d'ailleurs ces performances sont même comparables aux autres SGBD fonctionnant avec un serveur comme MySQL, Microsoft SQL Server ou PostgreSQL. Plus d'infos ici.
+
+-- Source : https://www.finalclap.com/faq/180-sqlite-definition

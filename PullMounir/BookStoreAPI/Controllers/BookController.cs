@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using BookStoreAPI.Entities;
 using Microsoft.AspNetCore.Mvc;
-
+using System;
 
 namespace BookStoreAPI.Controllers; // BookStoreAPI est l'espace de nom racine de mon projet 
 
@@ -33,6 +33,8 @@ public class BookController : ControllerBase
     [HttpPost("books")]
     public ActionResult<Book> CreateBook([FromBody] Book book)
     {
+
+        Console.WriteLine("appel de la méthode CreateBook");
         // je créer un nouveau livre et je l'ajoute à ma liste
         var newBook = new Book { Id = 2, Title = book.Title, Author = book.Author };
 
