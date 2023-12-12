@@ -41,6 +41,7 @@ public class BookController : ControllerBase
         return Ok(books);
 
     }
+
     // POST: api/Book
     // BODY: Book (JSON)
     [HttpPost]
@@ -70,4 +71,26 @@ public class BookController : ControllerBase
 
         }
     }
+
+    // DELETE: api/Book/{id}
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<Book>> DeleteBook(int id)
+    {
+        // we check if the book exists
+        Book? book = await _dbContext.Books.FindAsync(id);
+        if (book == null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            // we remove the book from the database
+            _dbContext.Books.Remove(book);
+            await _dbContext.SaveChangesAsync();
+
+            // we return the book
+            return Ok(book);
+        }
+    }
+
 }
