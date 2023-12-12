@@ -33,5 +33,10 @@ public class BookController : ControllerBase
     [HttpPost("books")]
     public ActionResult<Book> CreateBook([FromBody] Book book)
     {
+        // je créer un nouveau livre et je l'ajoute à ma liste
+        var newBook = new Book { Id = 2, Title = book.Title, Author = book.Author };
+
+        return Ok(newBook);
     }
+
 }
